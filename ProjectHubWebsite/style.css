@@ -1,0 +1,85 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: rgb(240, 240, 240);
+
+}
+
+h2 {
+    font-size: 23px;
+}
+
+.projects {
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.project {
+    background: rgb(190, 190, 190);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 250px;
+    text-decoration: none; 
+    color: black; 
+    transform: translateX(-200px);
+    transition: transform 0.75s ;
+
+}
+
+.project:hover {
+    background: rgb(215, 215, 215);
+    transform: scale(1.05) !important;
+}
+
+.project h2, .project p {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.title {
+    width: 100%;
+    background-color: rgb(45, 45, 45);
+    color: white; 
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.title h1, .title p {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: transform 1s cubic-bezier(0, 1.89, 0.58, 1), opacity 0.5s ease-out;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 15px 0;
+    margin-top: auto; 
+    width: 100%;
+}
+
+.footer a {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
